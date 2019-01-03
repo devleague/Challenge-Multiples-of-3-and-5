@@ -3,10 +3,20 @@
  * @param  {Number} n Number that is to be used for calculating multiples up to that Number
  * @return {Number}
  */
-exports.sumOfAMultiple = function( n ) {
-  var sum = 0;
+exports.sumOfAMultiple = function (n) {
 
-  // do your work here
-  
-  return sum;
+
+
+	var sum = 0;
+
+	// do your work here
+
+	for (var i = 0; i < n; i++) {
+		if (i % 3 === 0 || i % 5 === 0) {
+			sum += i;
+		}
+	}
+	console.log(sum)
+	return sum;
+
 };
